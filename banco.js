@@ -22,4 +22,4 @@ const Cadastro = sequelize.define("cadastros", {
     }
 })
 
- Cadastro.sync({force : true})
+ //Cadastro.sync({force : true})
