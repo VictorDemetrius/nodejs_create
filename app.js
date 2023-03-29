@@ -19,7 +19,7 @@ app.post("/cadastrar", function(req,res){
         nome: req.body.nome,
         telefone: req.body.telefone,
         origem: req.body.origem,
-        data: req.body.data,
+        data: req.body.data_contato,
         observacao: req.body.observacao
     }).then(function(){
         res.send("Dados enviados com sucesso")
