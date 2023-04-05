@@ -5,7 +5,7 @@ const Cadastro = db.sequelize.define("cadastros", {
         type: db.Sequelize.STRING
     },
     telefone:{
-        type: db.Sequelize.INTEGER
+        type: db.Sequelize.BIGINT
     },
     origem:{
         type: db.Sequelize.STRING
@@ -17,7 +17,6 @@ const Cadastro = db.sequelize.define("cadastros", {
         type: db.Sequelize.STRING
     }
 })
-
 //Cadastro.sync({force: true})
 
 module.exports = Cadastro
