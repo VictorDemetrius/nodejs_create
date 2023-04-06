@@ -29,46 +29,48 @@
              <h4 class="ps-1 pt-4"><Strong>Consultar - Agendamento de Potenciais Clientes</Strong></h4>
              <p class="ps-1">Sistema utilzado para agendamento de serviços</p>
          </div>
-<div class="container">
   
-      <div class="container">
-            <div class="row">
-              <div class="col-sm bg primay">
+    <div class="container">
+          <div class="row" >
+              <div class="col-md navbar bg-primary text-light" >
                 Nome
               </div>
-              <div class="col-sm">
+              <div class="col-md navbar bg-primary text-light" >
                 Telefone
               </div>
-              <div class="col-sm">
+              <div class="col-md navbar bg-primary text-light" >
                 Origem
               </div>
-              <div class="col-sm">
+              <div class="col-md navbar bg-primary text-light" >
                 Data do contato
               </div>
-              <div class="col-sm">
+              <div class="col-md navbar bg-primary text-light" >
                 Observações
               </div>
-            </div>
-        </div>
+          </div>
     </div>
+ 
+
     {{#each post}}
         {{#dataValues}}
         <div class="row">
-            <div class="col">
+           <div class="col-md ">
                 {{nome}}
             </div>
-            <div class="col">
+            <div class="col-md">
                 {{telefone}}
             </div>
-            <div class="col">
+            <div class="col-md">
                 {{origem}}
             </div>
-            <div class="col">
+            <div class="col-md">
+              <div align="left">
                 {{data}}
             </div>
-            <div class="col">
+            </div>
+            <div class="col-md">
                 {{observacao}}
             </div>
-        </div>
+         </div>
         {{/dataValues}}
     {{/each}}
