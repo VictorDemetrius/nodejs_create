@@ -29,48 +29,56 @@
              <h4 class="ps-1 pt-4"><Strong>Consultar - Agendamento de Potenciais Clientes</Strong></h4>
              <p class="ps-1">Sistema utilzado para agendamento de serviços</p>
          </div>
-  
-    <div class="container">
-          <div class="row" >
-              <div class="col-md navbar bg-primary text-light" >
-                Nome
-              </div>
-              <div class="col-md navbar bg-primary text-light" >
-                Telefone
-              </div>
-              <div class="col-md navbar bg-primary text-light" >
-                Origem
-              </div>
-              <div class="col-md navbar bg-primary text-light" >
-                Data do contato
-              </div>
-              <div class="col-md navbar bg-primary text-light" >
-                Observações
-              </div>
-          </div>
-    </div>
- 
-
-    {{#each post}}
-        {{#dataValues}}
-        <div class="row">
-           <div class="col-md ">
-                {{nome}}
+          <p>
+            <div class="container text-center">
+                <div class="row bg-primary">
+                    <div class="col text-light">
+                        Nome
+                    </div>
+                    <div class="col text-light">
+                        Telefone
+                    </div>
+                    <div class="col text-light">
+                        Origem
+                    </div>
+                    <div class="col text-light">
+                        Data de Contato
+                    </div>
+                    <div class="col text-light">
+                        Observação
+                    </div>
+                     <div class="col text-light">
+                        Ações
+                    </div>
+                </div>
+                 <p>
+                {{#each post}}
+                    {{#dataValues}}
+                    <div class="row">
+                        <div class="col">
+                            {{nome}}
+                        </div>
+                        <div class="col">
+                            {{telefone}}
+                        </div>
+                        <div class="col">
+                            {{origem}}
+                        </div>
+                        <div class="col">
+                            {{data}}
+                        </div>
+                        <div class="col">
+                            {{observacao}}
+                        </div>
+                        <div class="col">
+                            <a href="/excluir/{{id}}"/><button class="btn btn-primary" type="button">Excluir</button>
+                        </div></a>
+                    </div>
+                    {{/dataValues}}
+                {{/each}}
             </div>
-            <div class="col-md">
-                {{telefone}}
-            </div>
-            <div class="col-md">
-                {{origem}}
-            </div>
-            <div class="col-md">
-              <div align="left">
-                {{data}}
-            </div>
-            </div>
-            <div class="col-md">
-                {{observacao}}
-            </div>
-         </div>
-        {{/dataValues}}
-    {{/each}}
+            </p>
+        </div>
+        <div class="col-1">
+            &nbsp;
+        </div>
